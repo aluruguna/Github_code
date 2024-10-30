@@ -1,0 +1,20 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE
+*.idea/
+
+# pyenv
+venv/
+
+# git-secret
+.gitsecret/keys/random_seed
+!*.secret
+secrets/aws_dev_credentials
+secrets/partner_services.json
+
+# coverage
+.coverage
+htmlcov/
