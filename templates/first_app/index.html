@@ -5,6 +5,20 @@
     </head>
     <body>
         <h1>Hello this is index.html</h1>
-        {{Emma}}
+        <h2 style="text-align:center"> {{favorite_book.Emma}} </h2>
+        <table style="width: 100%; text-align: center">
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Favorite Book</th>
+        </tr>
+        {% for person, fav_book in favorite_book.items %}
+        <tr>
+            <td>{{forloop.counter}}</td>
+            <td>{{person}}</td>
+            <td>{{fav_book}}</td>
+        </tr>
+        {% endfor %}
+        </table>
     </body>
 </html>
