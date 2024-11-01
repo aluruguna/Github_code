@@ -26,5 +26,5 @@ urlpatterns = [
     path('about/', include('first_app.urls')),
     path('educative/', views.educative, name='educative'),
     # path('<age>/',  views.age, name='age'),
-    path('<int:num>', views.even_or_odd, name="even_or_odd"),
+    path('<int:num>/', views.even_or_odd, name="even_or_odd"),
 ]
